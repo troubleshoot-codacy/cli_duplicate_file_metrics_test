@@ -1,1 +1,1 @@
-ipsum lorum
+print("Hello!")
