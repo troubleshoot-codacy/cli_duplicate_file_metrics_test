@@ -1,0 +1,26 @@
+---
+engines:
+  shellcheck:
+  prospector:
+  pmd:
+  eslint:
+    exclude_paths:
+      - "./docs/**"
+  jacksonlinter:
+  remark-lint:
+  csslint:
+  phpcs:
+  phpmd:
+  duplication:
+    skipLexicalErrors: false
+    ignoreLiterals: false
+    ignoreIdentifiers: false
+    ignoreAnnotations: false
+    ignoreUsings: false
+    exclude_paths:
+      - "**/portal/**/*"
+    config:
+      languages:
+        - "javascript"
+exclude_paths:
+  - "ire/*"
