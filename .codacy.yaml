@@ -1,16 +1,11 @@
 ---
 engines:
-  shellcheck:
-  prospector:
-  pmd:
-  eslint:
+  pylint:
     exclude_paths:
-      - "./docs/**"
-  jacksonlinter:
-  remark-lint:
-  csslint:
-  phpcs:
-  phpmd:
+    - "ire/**"
+  pylintpython3:
+    exclude_paths:
+    - "ire/**"
   duplication:
     skipLexicalErrors: false
     ignoreLiterals: false
@@ -18,9 +13,7 @@ engines:
     ignoreAnnotations: false
     ignoreUsings: false
     exclude_paths:
-      - "**/portal/**/*"
+      - "ire/**"
     config:
       languages:
         - "javascript"
-exclude_paths:
-  - "ire/*"
