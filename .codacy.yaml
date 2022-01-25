@@ -1,0 +1,22 @@
+---
+engines:
+  eslint:
+    exclude_paths:
+    - "ire/**"
+  pylint:
+    exclude_paths:
+    - "ire/**"
+  pylintpython3:
+    exclude_paths:
+    - "ire/**"
+  duplication:
+    skipLexicalErrors: false
+    ignoreLiterals: false
+    ignoreIdentifiers: false
+    ignoreAnnotations: false
+    ignoreUsings: false
+    exclude_paths:
+      - "ire/**"
+    config:
+      languages:
+        - "javascript"
