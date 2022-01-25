@@ -1,12 +1,5 @@
-import { Codacyrc, Pattern } from "codacy-seed"
-import { CLIEngine, Linter } from "eslint"
-import { cloneDeep, fromPairs, isEmpty, partition } from "lodash"
 
-
-
-function patternsToRules(
-  patterns: Pattern[]
-): { [name: string]: Linter.RuleLevel | Linter.RuleLevelAndOptions } {
+function patternsToRules() {
 
   var stuff;
 

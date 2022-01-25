@@ -1,5 +1,8 @@
 ---
 engines:
+  eslint:
+    exclude_paths:
+    - "ire/**"
   pylint:
     exclude_paths:
     - "ire/**"
